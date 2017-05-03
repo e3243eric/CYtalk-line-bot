@@ -13,9 +13,6 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-This is tempalte file for configuration.
-Please copy as `application.yml` and change your value.
-
 line.bot:
   channel-token: 'WN3uzsmLfTL49nnL0j3VSMwtdpi1O8hAH16K2OzTpO+WhdBtiZhXhyqPF1/9TR+VjdEYVprTsHnbtDCS6Ev9ZwboasWgVFKTtsZHTEEFRKIxGw9rfP7hkq6xOkOpubPCCBXnXrBpoQv3kKzoISAMKQdB04t89/1O/w1cDnyilFU='
   channel-secret: '6d8999fa1db8b0e32abe900a2c538c08'
