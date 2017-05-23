@@ -86,13 +86,15 @@ import lombok.extern.slf4j.Slf4j;
 public class KitchenSinkController {
     @Autowired
     private LineMessagingClient lineMessagingClient;
-
+    
+    /*
     @EventMapping
     public void handleTextMessageEvent(MessageEvent<TextMessageContent> event) throws Exception {
         TextMessageContent message = event.getMessage();
         handleTextContent(event.getReplyToken(), event, message);
     }
-
+	*/
+    
     @EventMapping
     public void handleStickerMessageEvent(MessageEvent<StickerMessageContent> event) {
         handleSticker(event.getReplyToken(), event.getMessage());
@@ -291,13 +293,13 @@ public class KitchenSinkController {
             case "buttons": {
                 String imageUrl = createUri("/static/buttons/1040.jpg");
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
-                		"https://goo.gl/images/uc9U09",
+                		"https://2.bp.blogspot.com/-eiOOl2INYLI/WC2l_hwmmJI/AAAAAAAA0F0/kO1tRqxYuzEc1Ll3DHMJNitGPCZTtN9wACEw/s1600/3.jpg",
                         "My button sample",
                         "123ㄎㄎㄎ",
                         Arrays.asList(
-                                new URIAction("Go to line.me",
-                                              "https://line.me"),
-                                new PostbackAction("Say hello1",
+                                new URIAction("Go to 87",
+                                              "https://goo.gl/images/uc9U09"),
+                                new PostbackAction("say hello",
                                                    "你好."),
                                 new PostbackAction("說  hello2",
                                                    "你好87.",
