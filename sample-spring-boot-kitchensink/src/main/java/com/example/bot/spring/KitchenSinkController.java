@@ -210,7 +210,7 @@ public class KitchenSinkController {
             throw new IllegalArgumentException("replyToken must not be empty");
         }
         if (message.length() > 1000) {
-            message = message.substring(0, 1000 - 2) + "……";
+            message = message.substring(0, 1000 - 2) + "�色��";
         }
         this.reply(replyToken, new TextMessage(message));
     }
@@ -291,19 +291,20 @@ public class KitchenSinkController {
             case "buttons": {
                 String imageUrl = createUri("/static/buttons/1040.jpg");
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
-                        imageUrl,
+                		"https://goo.gl/images/uc9U09",
                         "My button sample",
                         "Hello, my button",
+                        "123ㄎㄎ",
                         Arrays.asList(
                                 new URIAction("Go to line.me",
                                               "https://line.me"),
                                 new PostbackAction("Say hello1",
-                                                   "hello こんにちは"),
-                                new PostbackAction("言 hello2",
-                                                   "hello こんにちは",
-                                                   "hello こんにちは"),
+                                                   "你好."),
+                                new PostbackAction("說  hello2",
+                                                   "你好87.",
+                                                   "你就是87."),
                                 new MessageAction("Say message",
-                                                  "Rice=米")
+                                                  "我是87.")
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
                 this.reply(replyToken, templateMessage);
@@ -317,14 +318,14 @@ public class KitchenSinkController {
                                         new URIAction("Go to line.me",
                                                       "https://line.me"),
                                         new PostbackAction("Say hello1",
-                                                           "hello こんにちは")
+                                                           "hello �����")
                                 )),
                                 new CarouselColumn(imageUrl, "hoge", "fuga", Arrays.asList(
-                                        new PostbackAction("言 hello2",
-                                                           "hello こんにちは",
-                                                           "hello こんにちは"),
+                                        new PostbackAction("閮� hello2",
+                                                           "hello �����",
+                                                           "hello �����"),
                                         new MessageAction("Say message",
-                                                          "Rice=米")
+                                                          "Rice=蝐�")
                                 ))
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Carousel alt text", carouselTemplate);
