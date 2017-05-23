@@ -87,13 +87,12 @@ public class KitchenSinkController {
     @Autowired
     private LineMessagingClient lineMessagingClient;
     
-    /*
     @EventMapping
     public void handleTextMessageEvent(MessageEvent<TextMessageContent> event) throws Exception {
         TextMessageContent message = event.getMessage();
         handleTextContent(event.getReplyToken(), event, message);
     }
-	*/
+	
     
     @EventMapping
     public void handleStickerMessageEvent(MessageEvent<StickerMessageContent> event) {
@@ -367,11 +366,13 @@ public class KitchenSinkController {
                 ));
                 break;
             default:
+            	/*
                 log.info("Returns echo message {}: {}", replyToken, text);
                 this.replyText(
                         replyToken,
                         text
                 );
+                */
                 break;
         }
     }
