@@ -293,8 +293,7 @@ public class KitchenSinkController {
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
                 		"https://goo.gl/images/uc9U09",
                         "My button sample",
-                        "Hello, my button",
-                        "123ㄎㄎ",
+                        "123ㄎㄎㄎ",
                         Arrays.asList(
                                 new URIAction("Go to line.me",
                                               "https://line.me"),
