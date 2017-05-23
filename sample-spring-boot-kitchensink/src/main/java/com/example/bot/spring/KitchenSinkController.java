@@ -302,9 +302,9 @@ public class KitchenSinkController {
                                                    "你好."),
                                 new PostbackAction("說  hello2",
                                                    "你好87.",
-                                                   "你就是87."),
+                                                   "我是87."),
                                 new MessageAction("Say message",
-                                                  "我是87.")
+                                                  "我就是87.")
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
                 this.reply(replyToken, templateMessage);
