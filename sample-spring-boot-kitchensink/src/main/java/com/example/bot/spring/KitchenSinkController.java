@@ -290,14 +290,14 @@ public class KitchenSinkController {
                 break;
             }
             case "buttons": {
-                String imageUrl = createUri("/static/buttons/1040.jpg");
+                String imageUrl = createUri("/static/buttons/searchEX.jpg");
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
-                		"http://ann.cycu.edu.tw/aa/ImgFile/news.aa_ann_img/36880_1_0.jpg",
+                		imageUrl,
                         "犀牛劇團《方舟計畫零零參》",
                         "	",
                         Arrays.asList(
-                                new URIAction("Go to 87",
-                                              "https://goo.gl/images/uc9U09")
+                                new URIAction("公告網頁",
+                                              "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880")
                                 /*
                                 new PostbackAction("say hello",
                                                    "你好."),
@@ -385,7 +385,7 @@ public class KitchenSinkController {
                         " ",
                         Arrays.asList(
                                 new URIAction("公告網頁",
-                                              "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880")
+                                              "https://github.com/e3243eric/line-bot-sdk-java/edit/master/sample-spring-boot-kitchensink/src/main/java/com/example/bot/spring/KitchenSinkController.java")
                                 
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
