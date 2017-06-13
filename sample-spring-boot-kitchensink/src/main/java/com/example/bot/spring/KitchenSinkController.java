@@ -395,11 +395,11 @@ public class KitchenSinkController {
             	ButtonsTemplate searchEX = new ButtonsTemplate(
                 		"http://ann.cycu.edu.tw/aa/ImgFile/news.aa_ann_img/36880_1_0.jpg",
                         "【通識活動】5/11(四)犀牛劇團《方舟計畫零零參》",
-                        "",
+                        " ",
                         Arrays.asList(
                                 new URIAction("公告網頁",
                                               "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880"),
-                                new MessageAction("", "幹")
+                                new MessageAction(" ", "幹")
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
