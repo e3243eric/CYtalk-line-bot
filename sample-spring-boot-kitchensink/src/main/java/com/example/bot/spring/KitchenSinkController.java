@@ -382,7 +382,7 @@ public class KitchenSinkController {
             	ButtonsTemplate searchEX = new ButtonsTemplate(
             			imag,
                         "犀牛劇團《方舟計畫零零參》",
-                        "",
+                        " ",
                         Arrays.asList(
                                 new URIAction("公告網頁",
                                               "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880")
