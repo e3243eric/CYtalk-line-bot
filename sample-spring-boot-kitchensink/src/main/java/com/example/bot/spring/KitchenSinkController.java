@@ -292,17 +292,21 @@ public class KitchenSinkController {
             case "buttons": {
                 String imageUrl = createUri("/static/buttons/1040.jpg");
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
-                		"https://2.bp.blogspot.com/-eiOOl2INYLI/WC2l_hwmmJI/AAAAAAAA0F0/kO1tRqxYuzEc1Ll3DHMJNitGPCZTtN9wACEw/s1600/3.jpg",
+                		"http://ann.cycu.edu.tw/aa/ImgFile/news.aa_ann_img/36880_1_0.jpg",
                         "犀牛劇團《方舟計畫零零參》",
                         "	",
                         Arrays.asList(
                                 new URIAction("Go to 87",
-                                              "https://goo.gl/images/uc9U09"),
+                                              "https://goo.gl/images/uc9U09")
+                                /*
                                 new PostbackAction("say hello",
                                                    "你好."),
                                 new PostbackAction("說  hello2",
                                                    "你好87.",
-                                                   "我是87.")
+                                                   "我是87."),
+                                new MessageAction("Say message",
+                                                  "我就是87.")        
+                                */
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
                 this.reply(replyToken, templateMessage);
@@ -394,6 +398,7 @@ public class KitchenSinkController {
                 */
             	
             	//5/11通識.
+            	/*
             	ButtonsTemplate searchEX = new ButtonsTemplate(
             			"http://ann.cycu.edu.tw/aa/ImgFile/news.aa_ann_img/36880_1_0.jpg",
                         "犀牛劇團《方舟計畫零零參》",
@@ -407,7 +412,7 @@ public class KitchenSinkController {
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
-                //******
+                */
                 
                 break;
         }
