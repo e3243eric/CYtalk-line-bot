@@ -293,7 +293,7 @@ public class KitchenSinkController {
                 String imageUrl = createUri("/static/buttons/searchEX.jpg");
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
                 		imageUrl,
-                        "犀牛劇團《方舟計畫零零參》",
+                        "【通識活動】5/11(四)犀牛劇團《方舟計畫零零參》",
                         "	",
                         Arrays.asList(
                                 new URIAction("公告網頁",
