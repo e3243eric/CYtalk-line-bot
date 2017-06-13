@@ -378,7 +378,7 @@ public class KitchenSinkController {
                 */
             	
             	//5/11通識.
-            	string imag = createUri("/static/buttons/searchEX.jpg");
+            	String imag = createUri("/static/buttons/searchEX.jpg");
             	ButtonsTemplate searchEX = new ButtonsTemplate(
             			imag,
                         "犀牛劇團《方舟計畫零零參》",
@@ -390,7 +390,7 @@ public class KitchenSinkController {
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
-                */
+                
                 
                 break;
         }
