@@ -302,9 +302,7 @@ public class KitchenSinkController {
                                                    "你好."),
                                 new PostbackAction("說  hello2",
                                                    "你好87.",
-                                                   "我是87."),
-                                new MessageAction("Say message",
-                                                  "我就是87.")
+                                                   "我是87.")
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
                 this.reply(replyToken, templateMessage);
@@ -404,7 +402,8 @@ public class KitchenSinkController {
                                 new URIAction("公告網頁",
                                               "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880"),
                                 new MessageAction("	", "幹1"),
-                                new MessageAction("	", "幹2")
+                                new MessageAction("	", "幹2"),
+                                new MessageAction("	", "幹3")
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
