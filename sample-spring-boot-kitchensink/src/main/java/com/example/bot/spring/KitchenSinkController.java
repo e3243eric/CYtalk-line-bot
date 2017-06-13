@@ -382,7 +382,7 @@ public class KitchenSinkController {
             	ButtonsTemplate searchEX = new ButtonsTemplate(
             			imag,
                         "犀牛劇團《方舟計畫零零參》",
-                        " ",
+                        "",
                         Arrays.asList(
                                 new URIAction("公告網頁",
                                               "https://github.com/e3243eric/line-bot-sdk-java/edit/master/sample-spring-boot-kitchensink/src/main/java/com/example/bot/spring/KitchenSinkController.java")
