@@ -293,8 +293,8 @@ public class KitchenSinkController {
                 String imageUrl = createUri("/static/buttons/1040.jpg");
                 ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
                 		"https://2.bp.blogspot.com/-eiOOl2INYLI/WC2l_hwmmJI/AAAAAAAA0F0/kO1tRqxYuzEc1Ll3DHMJNitGPCZTtN9wACEw/s1600/3.jpg",
-                        "My button sample",
-                        "123ㄎㄎㄎ",
+                        "犀牛劇團《方舟計畫零零參》",
+                        "	",
                         Arrays.asList(
                                 new URIAction("Go to 87",
                                               "https://goo.gl/images/uc9U09"),
@@ -311,20 +311,24 @@ public class KitchenSinkController {
                 break;
             }
             /*
-            case "幫我找5/11通識": {
-                ButtonsTemplate searchEX = new ButtonsTemplate(
+            	ButtonsTemplate buttonsTemplate = new ButtonsTemplate(
                 		"http://ann.cycu.edu.tw/aa/ImgFile/news.aa_ann_img/36880_1_0.jpg",
-                        "【通識活動】5/11(四)犀牛劇團《方舟計畫零零參》",
-                        "",
+                        "My button sample",
+                        "123ㄎㄎㄎ",
                         Arrays.asList(
-                                new URIAction("公告網頁",
-                                              "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880")
-                                
+                                new URIAction("Go to 87",
+                                              "https://goo.gl/images/uc9U09"),
+                                new PostbackAction("say hello",
+                                                   "你好."),
+                                new PostbackAction("說  hello2",
+                                                   "你好87.",
+                                                   "我是87."),
+                                new MessageAction("Say message",
+                                                  "我就是87.")
                         ));
-                TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
+                TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
                 this.reply(replyToken, templateMessage);
                 break;
-            }
             */
             case "carousel": {
                 String imageUrl = createUri("/static/buttons/1040.jpg");
@@ -394,12 +398,12 @@ public class KitchenSinkController {
             	//5/11通識.
             	ButtonsTemplate searchEX = new ButtonsTemplate(
                 		"http://ann.cycu.edu.tw/aa/ImgFile/news.aa_ann_img/36880_1_0.jpg",
-                        "【通識活動】5/11(四)犀牛劇團《方舟計畫零零參》",
+                        "犀牛劇團《方舟計畫零零參》",
                         " ",
                         Arrays.asList(
                                 new URIAction("公告網頁",
                                               "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880"),
-                                new MessageAction(" ", "幹")
+                                new MessageAction("	", "幹")
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
