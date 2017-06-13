@@ -385,7 +385,7 @@ public class KitchenSinkController {
                         "",
                         Arrays.asList(
                                 new URIAction("公告網頁",
-                                              "https://github.com/e3243eric/line-bot-sdk-java/edit/master/sample-spring-boot-kitchensink/src/main/java/com/example/bot/spring/KitchenSinkController.java")
+                                              "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880")
                                 
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
