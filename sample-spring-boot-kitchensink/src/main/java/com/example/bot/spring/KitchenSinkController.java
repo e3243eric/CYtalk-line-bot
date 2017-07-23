@@ -344,11 +344,13 @@ public class KitchenSinkController {
                 break;
             }
 	 // 7/24 for SQL.
+	    /*
 	    case "drop": {
 		   jdbcmysql test = new jdbcmysql(); 
 		   test.dropTable();
 		   break;
 	    }
+	    */
 	 // 7/24 for SQL.
             case "imagemap":
                 this.reply(replyToken, new ImagemapMessage(
