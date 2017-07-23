@@ -98,6 +98,28 @@ public class KitchenSinkController {
 	
 	
     // 7/24 for SQL.
+  rivate Connection con = null; //Database objects 
+  //連接object 
+  private Statement stat = null; 
+  //執行,傳入之sql為完整字串 
+  private ResultSet rs = null; 
+  //結果集 
+  private PreparedStatement pst = null; 
+  //執行,傳入之sql為預儲之字申,需要傳入變數之位置 
+  //先利用?來做標示 
+  
+  private String dropdbSQL = "DROP TABLE User "; 
+  
+  private String createdbSQL = "CREATE TABLE User (" + 
+    "    id     INTEGER " + 
+    "  , name    VARCHAR(20) " + 
+    "  , passwd  VARCHAR(20))"; 
+  
+  private String insertdbSQL = "insert into User(id,name,passwd) " + 
+      "select ifNULL(max(id),0)+1,?,? FROM User"; 
+  
+  private String selectSQL = "select * from User "; 
+	
     public KitchenSinkController()
     {
 	    try { 
