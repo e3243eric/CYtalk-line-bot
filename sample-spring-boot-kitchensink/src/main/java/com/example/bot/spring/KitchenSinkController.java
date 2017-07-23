@@ -347,6 +347,7 @@ public class KitchenSinkController {
 	    case "drop": {
 		   jdbcmysql test = new jdbcmysql(); 
 		   test.dropTable();
+		   break;
 	    }
 	 // 7/24 for SQL.
             case "imagemap":
