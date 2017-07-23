@@ -77,6 +77,15 @@ import com.linecorp.bot.model.response.BotApiResponse;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
+// 7/24 for SQL.
+import java.sql.Connection; 
+import java.sql.DriverManager; 
+import java.sql.PreparedStatement; 
+import java.sql.ResultSet; 
+import java.sql.SQLException; 
+import java.sql.Statement; 
+// 7/24 for SQL.
+
 import lombok.NonNull;
 import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
@@ -86,7 +95,51 @@ import lombok.extern.slf4j.Slf4j;
 public class KitchenSinkController {
     @Autowired
     private LineMessagingClient lineMessagingClient;
-    
+	
+	
+    // 7/24 for SQL.
+    puble KitchenSinkController()
+    {
+	    try { 
+      		Class.forName("com.mysql.jdbc.Driver"); 
+      		//註冊driver 
+      		con = DriverManager.getConnection( 
+      		"jdbc:mysql://123.0.220.43:3306/test?useUnicode=true&characterEncoding=Big5&useSSL=false", 
+      		"test","123"); 
+      		//取得connection
+ 
+		//jdbc:mysql://localhost/test?useUnicode=true&characterEncoding=Big5
+		//localhost是主機名,test是database名
+		//useUnicode=true&characterEncoding=Big5使用的編碼 
+      
+	    } 
+   	    catch(ClassNotFoundException e) 
+	    { 
+      		System.out.println("DriverClassNotFound :"+e.toString()); 
+	    }//有可能會產生sqlexception 
+    	    catch(SQLException x) { 
+      		System.out.println("Exception :"+x.toString()); 
+	    }
+    }
+	
+    public void dropTable() 
+    { 
+    	try 
+    	{	 
+      		stat = con.createStatement(); 
+      		stat.executeUpdate(dropdbSQL); 
+    	} 
+    	catch(SQLException e) 
+    	{ 
+      		System.out.println("DropDB Exception :" + e.toString()); 
+    	} 
+    	finally 
+    	{ 
+      		Close(); 
+    	} 
+    } 
+    // 7/24 for SQL.
+
     @EventMapping
     public void handleTextMessageEvent(MessageEvent<TextMessageContent> event) throws Exception {
         TextMessageContent message = event.getMessage();
@@ -334,6 +387,12 @@ public class KitchenSinkController {
                 this.reply(replyToken, templateMessage);
                 break;
             }
+	 // 7/24 for SQL.
+	    case "drop": {
+		   jdbcmysql test = new jdbcmysql();
+		   test.dropTable();
+	    }
+	 // 7/24 for SQL.
             case "imagemap":
                 this.reply(replyToken, new ImagemapMessage(
                         createUri("/static/rich"),
