@@ -78,7 +78,7 @@ import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
 // 7/24 for SQL.
-import db;
+import com.example.bot.spring.db;
 // 7/24 for SQL.
 
 import lombok.NonNull;
