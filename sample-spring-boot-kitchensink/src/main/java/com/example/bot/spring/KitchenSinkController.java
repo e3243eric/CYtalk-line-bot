@@ -98,7 +98,7 @@ public class KitchenSinkController {
 	
 	
     // 7/24 for SQL.
-    puble KitchenSinkController()
+    public KitchenSinkController()
     {
 	    try { 
       		Class.forName("com.mysql.jdbc.Driver"); 
