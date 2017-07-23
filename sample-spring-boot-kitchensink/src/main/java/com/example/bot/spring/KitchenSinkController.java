@@ -98,7 +98,7 @@ public class KitchenSinkController {
 	
 	
     // 7/24 for SQL.
-  rivate Connection con = null; //Database objects 
+  private Connection con = null; //Database objects 
   //連接object 
   private Statement stat = null; 
   //執行,傳入之sql為完整字串 
