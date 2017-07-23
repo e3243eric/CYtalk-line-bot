@@ -1,4 +1,5 @@
 // 7/24 for SQL.
+package com.example.bot.spring;
 
 import java.sql.Connection; 
 import java.sql.DriverManager; 
