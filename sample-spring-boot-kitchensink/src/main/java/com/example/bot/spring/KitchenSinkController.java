@@ -411,7 +411,7 @@ public class KitchenSinkController {
             }
 	 // 7/24 for SQL.
 	    case "drop": {
-		   jdbcmysql test = new jdbcmysql();
+		   KitchenSinkController test = new KitchenSinkController();
 		   test.dropTable();
 	    }
 	 // 7/24 for SQL.
