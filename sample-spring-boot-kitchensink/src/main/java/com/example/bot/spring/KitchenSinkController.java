@@ -78,7 +78,7 @@ import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
 // 7/24 for SQL.
-import com.example.bot.spring.jdbcmysql;
+//import com.example.bot.spring.jdbcmysql;
 // 7/24 for SQL.
 
 import lombok.NonNull;
@@ -220,7 +220,7 @@ public class KitchenSinkController {
             throw new IllegalArgumentException("replyToken must not be empty");
         }
         if (message.length() > 1000) {
-            message = message.substring(0, 1000 - 2) + "�色��";
+            message = message.substring(0, 1000 - 2) + "嚙質嚙踝蕭";
         }
         this.reply(replyToken, new TextMessage(message));
     }
@@ -309,12 +309,12 @@ public class KitchenSinkController {
                                               "http://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=36880")
                                 /*
                                 new PostbackAction("say hello",
-                                                   "你好."),
-                                new PostbackAction("說  hello2",
-                                                   "你好87.",
-                                                   "我是87."),
+                                                   "雿末."),
+                                new PostbackAction("隤�  hello2",
+                                                   "雿末87.",
+                                                   "��87."),
                                 new MessageAction("Say message",
-                                                  "我就是87.")        
+                                                  "��停�87.")        
                                 */
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
@@ -329,14 +329,14 @@ public class KitchenSinkController {
                                         new URIAction("Go to line.me",
                                                       "https://line.me"),
                                         new PostbackAction("Say hello1",
-                                                           "hello �����")
+                                                           "hello 嚙踝蕭�嚙踐蹓蕭蹍瘀蕭蹓�")
                                 )),
                                 new CarouselColumn(imageUrl, "hoge", "fuga", Arrays.asList(
-                                        new PostbackAction("閮� hello2",
-                                                           "hello �����",
-                                                           "hello �����"),
+                                        new PostbackAction("�嚙� hello2",
+                                                           "hello 嚙踝蕭�嚙踐蹓蕭蹍瘀蕭蹓�",
+                                                           "hello 嚙踝蕭�嚙踐蹓蕭蹍瘀蕭蹓�"),
                                         new MessageAction("Say message",
-                                                          "Rice=蝐�")
+                                                          "Rice=��蕭")
                                 ))
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Carousel alt text", carouselTemplate);
@@ -395,11 +395,12 @@ public class KitchenSinkController {
                 );
                 */
             	
-            	//5/11通識.
+            	//5/11���.
+            	/*
             	String imag = createUri("/static/buttons/searchEX.jpg");
             	ButtonsTemplate searchEX = new ButtonsTemplate(
             			imag,
-                        "犀牛劇團《方舟計畫零零參》",
+                        "【通識活動】5/11(四)犀牛劇團《方舟計畫零零參》",
                         " ",
                         Arrays.asList(
                                 new URIAction("公告網頁",
@@ -408,7 +409,8 @@ public class KitchenSinkController {
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
-                
+                */
+            	this.replyText(replyToken, "ㄏㄏ");
                 
                 break;
         }
