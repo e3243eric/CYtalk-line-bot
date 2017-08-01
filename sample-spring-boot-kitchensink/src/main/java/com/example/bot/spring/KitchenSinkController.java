@@ -410,7 +410,7 @@ public class KitchenSinkController {
                                         )
                                 ),
             					new MessageImagemapAction(
-                                        "URANAI!!!",
+                                        "URANAI!",
                                         new ImagemapArea(
                                                 520, 520, 520, 520
                                         )
