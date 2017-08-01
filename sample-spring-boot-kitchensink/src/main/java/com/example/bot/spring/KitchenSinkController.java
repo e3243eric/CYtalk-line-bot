@@ -409,7 +409,7 @@ public class KitchenSinkController {
                                         		0, 520, 520, 520
                                         )
                                 ),
-            					new MessageImagemapAction(
+            					new URIImagemapAction(
                                         "https://www.google.com.tw/search?q=%E6%84%9F%E6%81%A9%E7%9A%84%E5%BF%83&rlz=1C1ASUM_enTW693TW693&oq=%E6%84%9F%E6%81%A9&aqs=chrome.1.69i57j35i39j0l4.3608j0j4&sourceid=chrome&ie=UTF-8",
                                         new ImagemapArea(
                                                 520, 520, 520, 520
@@ -418,6 +418,15 @@ public class KitchenSinkController {
             			)
             	));
             	break;
+            case "!search":
+            	ConfirmTemplate confirmTemplate = new ConfirmTemplate(
+                        "想找什麼?",
+                        new MessageAction("通識", "通識!!!"),
+                        new MessageAction("公告", "公告!!!")
+                );
+            	TemplateMessage templateMessage = new TemplateMessage("ConfirmSearch", confirmTemplate);
+                this.reply(replyToken, templateMessage);
+                break;
             default:
             	
             	/*
