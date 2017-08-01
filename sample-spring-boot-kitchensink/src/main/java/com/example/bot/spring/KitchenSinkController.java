@@ -387,7 +387,7 @@ public class KitchenSinkController {
                 break;
             case "使用說明":
             	this.reply(replyToken, new ImagemapMessage(
-            			createUri("/static/buttons/HelpImage.jpg"),
+            			createUri("/static/imageMap"),
             			"help imagemap",
             			new ImagemapBaseSize(1040, 1040),
             			Arrays.asList(
