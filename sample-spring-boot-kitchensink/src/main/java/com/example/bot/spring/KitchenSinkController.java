@@ -385,6 +385,38 @@ public class KitchenSinkController {
                         )
                 ));
                 break;
+            case "使用說明":
+            	this.reply(replyToken, new ImagemapMessage(
+            			createUri("/static/buttons/HelpImage.jpg"),
+            			"help imagemap",
+            			new ImagemapBaseSize(1040, 1040),
+            			Arrays.asList(
+            					new MessageImagemapAction(
+            							"!search"
+            							new ImagemapArea(
+            									0, 0, 520, 520
+            							)
+            					),
+            					new MessageImagemapAction(
+            							"!remind"
+            							new ImagemapArea(
+            									520, 0, 520, 520
+            							)
+            					),
+            					new URIImagemapAction(
+                                        "https://www.facebook.com/profile.php?id=100000307620798&fref=ts",
+                                        new ImagemapArea(
+                                        		0, 520, 520, 520
+                                        )
+                                ),
+            					new URIImagemapAction(
+                                        "https://www.google.com.tw/search?q=%E6%84%9F%E6%81%A9%E7%9A%84%E5%BF%83&rlz=1C1ASUM_enTW693TW693&oq=%E6%84%9F%E6%81%A9%E7%9A%84%E5%BF%83&aqs=chrome..69i57j0l5.3557j0j7&sourceid=chrome&ie=UTF-8",
+                                        new ImagemapArea(
+                                        		520, 520, 520, 520
+                                        )
+                                )
+            			)
+            	));
             default:
             	
             	/*

@@ -33,7 +33,7 @@ buildscript {
 apply plugin: 'idea'
 
 group = 'com.linecorp.bot'
-version = '1.8.0'
+version = '1.9.0'
 
 //set build variables based on build type (release, continuous integration, development)
 def isDevBuild
@@ -91,6 +91,7 @@ subprojects {
             dependency 'com.squareup.retrofit2:retrofit:2.2.0'
             dependency 'org.assertj:assertj-core:3.6.2'
             dependency 'org.projectlombok:lombok:1.16.12'
+            dependency 'com.fasterxml.jackson.core:jackson-databind:2.8.8.1'
         }
     }
 
@@ -134,11 +135,7 @@ subprojects {
     }
 
     compileJava {
-        options.compilerArgs << '-Xlint:all' << '-Xlint:-processing' << '-parameters'
-
-        if (!isDevBuild) {
-            options.compilerArgs << '-Werror'
-        }
+        options.compilerArgs << '-Xlint:all' << '-Werror' << '-Xlint:-processing' << '-parameters'
     }
 
     project.plugins.withType(org.springframework.boot.gradle.plugin.SpringBootPlugin) {
