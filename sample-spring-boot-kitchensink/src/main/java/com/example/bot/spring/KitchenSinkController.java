@@ -392,13 +392,13 @@ public class KitchenSinkController {
             			new ImagemapBaseSize(1040, 1040),
             			Arrays.asList(
             					new MessageImagemapAction(
-            							"!search"
+            							"!search",
             							new ImagemapArea(
             									0, 0, 520, 520
             							)
             					),
             					new MessageImagemapAction(
-            							"!remind"
+            							"!remind",
             							new ImagemapArea(
             									520, 0, 520, 520
             							)
