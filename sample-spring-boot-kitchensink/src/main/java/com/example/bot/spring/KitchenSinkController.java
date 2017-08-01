@@ -409,10 +409,10 @@ public class KitchenSinkController {
                                         		0, 520, 520, 520
                                         )
                                 ),
-            					new URIImagemapAction(
-                                        "https://www.google.com.tw/search?q=%E6%84%9F%E6%81%A9%E7%9A%84%E5%BF%83&rlz=1C1ASUM_enTW693TW693&oq=%E6%84%9F%E6%81%A9%E7%9A%84%E5%BF%83&aqs=chrome..69i57j0l5.3557j0j7&sourceid=chrome&ie=UTF-8",
+            					new MessageImagemapAction(
+                                        "URANAI!",
                                         new ImagemapArea(
-                                        		520, 520, 520, 520
+                                                520, 520, 520, 520
                                         )
                                 )
             			)
