@@ -442,7 +442,7 @@ public class KitchenSinkController {
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", searchEX);
                 this.reply(replyToken, templateMessage);
                 */
-            	this.replyText(replyToken, "ㄏㄏ");
+            	//this.replyText(replyToken, "ㄏㄏ");
                 
                 break;
         }
