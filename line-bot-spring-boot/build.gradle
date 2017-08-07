@@ -20,6 +20,8 @@ dependencies {
     compile project(':line-bot-servlet')
     compile 'org.springframework.boot:spring-boot-autoconfigure'
     compile 'org.springframework.boot:spring-boot-starter-web'
-
+    
+    compile 'org.springframework:spring-jdbc'
+    
     optional 'javax.validation:validation-api'
 }
