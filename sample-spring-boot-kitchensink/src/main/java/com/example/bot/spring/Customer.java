@@ -1,4 +1,4 @@
-package hello;
+package com.example.bot.spring;
 
 public class Customer {
     private long id;
