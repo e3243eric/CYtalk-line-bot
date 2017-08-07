@@ -21,7 +21,7 @@ public class KitchenSinkApplication implements CommandLineRunner {
     static Path downloadedContentDir;
     private static final Logger log = LoggerFactory.getLogger(KitchenSinkApplication.class);
 
-    public static void main(String args[]) {
+    public static void main(String[] args) throws IOException {
         downloadedContentDir = Files.createTempDirectory("line-bot");
         SpringApplication.run(KitchenSinkApplication.class, args);
     }
