@@ -19,11 +19,11 @@ import java.nio.file.Path;
 @SpringBootApplication
 public class KitchenSinkApplication implements CommandLineRunner {
     static Path downloadedContentDir;
-    private static final Logger log = LoggerFactory.getLogger(Application.class);
+    private static final Logger log = LoggerFactory.getLogger(KitchenSinkApplication.class);
 
     public static void main(String args[]) {
         downloadedContentDir = Files.createTempDirectory("line-bot");
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(KitchenSinkApplication.class, args);
     }
 
     @Autowired
