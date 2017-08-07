@@ -18,9 +18,4 @@ apply plugin: 'org.springframework.boot'
 
 dependencies {
     compile project(':line-bot-spring-boot')
-    /*
-    new
-    compile("org.springframework:spring-jdbc")
-    */
-    compile("org.springframework:spring-jdbc")
 }
