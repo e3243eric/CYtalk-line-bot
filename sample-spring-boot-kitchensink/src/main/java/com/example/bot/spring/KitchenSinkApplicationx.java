@@ -17,7 +17,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
+public class KitchenSinkApplication implements CommandLineRunner {
     static Path downloadedContentDir;
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
