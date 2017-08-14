@@ -18,6 +18,5 @@ apply plugin: 'org.springframework.boot'
 
 dependencies {
     compile project(':line-bot-spring-boot')
-    compole project(':MySQL')
 }
 

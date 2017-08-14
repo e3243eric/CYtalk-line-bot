@@ -23,3 +23,5 @@ include 'line-bot-spring-boot'
 include 'sample-spring-boot-kitchensink'
 // include 'sample-spring-boot-echo'
 
+include 'MySQL'
+
