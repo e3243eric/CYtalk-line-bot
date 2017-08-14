@@ -18,10 +18,10 @@ include 'line-bot-spring-boot'
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-
+include 'MySQL'
 // samples
 include 'sample-spring-boot-kitchensink'
 // include 'sample-spring-boot-echo'
 
-include 'MySQL'
+
 
