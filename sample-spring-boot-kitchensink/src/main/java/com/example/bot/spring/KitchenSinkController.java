@@ -81,7 +81,8 @@ import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 //import com.example.bot.spring.jdbcmysql;
 // 7/24 for SQL.
 // 8/15 
-import com.line
+import com.bot.mysql.User;
+import com.bot.mysql.UserRepository;
 // 8/15
 import lombok.NonNull;
 import lombok.Value;
