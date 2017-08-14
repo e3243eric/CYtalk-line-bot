@@ -77,12 +77,9 @@ import com.linecorp.bot.model.response.BotApiResponse;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
-// 7/24 for SQL.
-//import com.example.bot.spring.jdbcmysql;
-// 7/24 for SQL.
-// 8/15 
-import com.bot.mysql.User;
-import com.bot.mysql.UserRepository;
+// 8/15
+import com.linecorp.bot.mysql.User;
+import com.linecorp.bot.mysql.UserRepository;
 // 8/15
 import lombok.NonNull;
 import lombok.Value;

@@ -1,4 +1,4 @@
-package com.bot.mysql;
+package com.linecorp.bot.mysql;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

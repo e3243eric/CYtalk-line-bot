@@ -19,7 +19,6 @@ include 'line-bot-spring-boot'
  * under the License.
  */
 include 'MySQL'
-project(':MySQL').projectDir = new File('../MySQL')
 // samples
 include 'sample-spring-boot-kitchensink'
 // include 'sample-spring-boot-echo'

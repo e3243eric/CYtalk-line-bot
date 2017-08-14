@@ -1,8 +1,8 @@
-package com.bot.mysql;
+package com.linecorp.bot.mysql;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.bot.mysql.User;
+import com.linecorp.bot.mysql.User;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
 // CRUD refers Create, Read, Update, Delete

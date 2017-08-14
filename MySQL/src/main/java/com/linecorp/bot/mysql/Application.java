@@ -1,4 +1,4 @@
-package com.bot.mysql;
+package com.linecorp.bot.mysql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
