@@ -1,4 +1,3 @@
-/*
 package com.bot.mysql;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,4 +39,3 @@ public class MainController {
 	}
 	
 }
-*/
