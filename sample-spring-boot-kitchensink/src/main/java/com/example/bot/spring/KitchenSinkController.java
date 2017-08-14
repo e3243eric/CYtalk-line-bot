@@ -80,7 +80,9 @@ import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 // 7/24 for SQL.
 //import com.example.bot.spring.jdbcmysql;
 // 7/24 for SQL.
-
+// 8/15 
+import MySQL;
+// 8/15
 import lombok.NonNull;
 import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
@@ -343,15 +345,15 @@ public class KitchenSinkController {
                 this.reply(replyToken, templateMessage);
                 break;
             }
-	 // 7/24 for SQL.
-	    /*
-	    case "drop": {
-		   jdbcmysql test = new jdbcmysql(); 
-		   test.dropTable();
-		   break;
-	    }
-	    */
-	 // 7/24 for SQL.
+       // 8/15
+            case "carousel": {
+            	User n = new User();
+            	n.setName("eric");
+        		n.setEmail("a0910608619@gmail.com");
+        		this.replyText(replyToken, "SAVE");
+            	break;
+            }
+       // 8/15
             case "imagemap":
                 this.reply(replyToken, new ImagemapMessage(
                         createUri("/static/rich"),
