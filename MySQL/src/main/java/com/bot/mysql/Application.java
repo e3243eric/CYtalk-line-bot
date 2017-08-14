@@ -1,3 +1,4 @@
+/*
 package com.bot.mysql;
 
 import org.springframework.boot.SpringApplication;
@@ -10,3 +11,4 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 }
+*/
