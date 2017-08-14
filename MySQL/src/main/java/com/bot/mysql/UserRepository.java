@@ -1,4 +1,4 @@
-package hello;
+package com.bot.mysql;
 
 import org.springframework.data.repository.CrudRepository;
 
