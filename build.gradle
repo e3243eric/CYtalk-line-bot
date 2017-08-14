@@ -62,7 +62,7 @@ subprojects {
     apply plugin: 'findbugs'
     apply plugin: 'java'
     if (new File("${project.rootDir}/.git").exists()) {
-        logger.info("There's .git directory. Create git.properties.")
+        logger.info("https://github.com/e3243eric/CYtalk-line-bot")
         apply plugin: 'com.gorylenko.gradle-git-properties'
     } else {
         logger.warn("There's no .git directory. Can't create git.properties.");
@@ -145,7 +145,7 @@ subprojects {
     }
 }
 
-[':line-bot-api-client', ':line-bot-model', ':line-bot-servlet', ':line-bot-spring-boot', ':MySQL'].each { projectName ->
+[':line-bot-api-client', ':line-bot-model', ':line-bot-servlet', ':line-bot-spring-boot'].each { projectName ->
     project(projectName) { project ->
         apply plugin: 'signing'
         apply plugin: 'maven'
