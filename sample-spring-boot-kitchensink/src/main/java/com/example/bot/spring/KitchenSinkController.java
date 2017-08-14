@@ -81,7 +81,8 @@ import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 //import com.example.bot.spring.jdbcmysql;
 // 7/24 for SQL.
 // 8/15 
-import com.example.bot.spring.echo.*;;
+import com.bot.mysql.User;
+import com.bot.mysql.UserRepository;
 // 8/15
 import lombok.NonNull;
 import lombok.Value;
@@ -347,7 +348,7 @@ public class KitchenSinkController {
             }
        // 8/15
             case "!add": {
-            	private UserRepository userRepository;
+            	UserRepository userRepository;
             	User n = new User();
             	n.setName("eric");
         		n.setEmail("a0910608619@gmail.com");
