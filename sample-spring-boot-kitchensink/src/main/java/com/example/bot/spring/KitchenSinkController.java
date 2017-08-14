@@ -346,7 +346,7 @@ public class KitchenSinkController {
                 break;
             }
        // 8/15
-            case "carousel": {
+            case "!add": {
             	User n = new User();
             	n.setName("eric");
         		n.setEmail("a0910608619@gmail.com");
